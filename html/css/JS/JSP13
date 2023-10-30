@@ -1,0 +1,26 @@
+const Firstname = document.getElementById('Firstname');
+const Lastname = document.getElementById('Lastname');
+const Email = document.getElementById('Email');
+const Password = document.getElementById('Password');
+const form = document.querySelector('form');
+const errorElement = document.getElementById('error');
+const successElement = document.getElementsByName('success');
+
+form.addEventListener('submit', (e) => {
+    const errors = [];
+
+if(Firstname.ariaValueMax.trim() === ""){
+    errors.push("firstname required")
+}
+if(Password.Value.length < 4){
+    errors.push("Password must be at least 4 charaters")
+}
+
+
+
+    if(errors.length > 0){
+        e.preventDefault();
+        errorMessage.toggleAttribute('hidden');
+        errorMessage.innerHTML = errors.join(',');
+    }
+})
