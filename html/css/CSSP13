@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+body{
+    background: rgb(26, 169, 212) ;
+    font-family: 'open Sans', sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgb(23, 23, 92);
+    border-radius: 10px;
+    width: 550px;
+   box-shadow: 0 2.8 2.2px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    background-color:rgb(233, 233, 247) ;
+    padding: 30px 0;
+}
+.header h2{
+ color: rgb(39, 13, 133);
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    padding: auto;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 2px;
+
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid rgb(36, 175, 23);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    display: block;
+    text-align: center;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color:black;
+}
+.form-control small{
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form .btn{
+    background: rgb(3, 3, 34);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    padding: 16px 0;
+margin-top: 10px;
+width: 100%;
+color: white;
+font-weight: bold;
+text-transform: uppercase;
+}
+.form .btn:hover{
+    background: rgb(16, 16, 83);
+}
+form input[type = "submit"]{
+    cursor: pointer;
+
+}
+small{
+    color: #df3434;
+    
+}
